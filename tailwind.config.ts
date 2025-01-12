@@ -91,7 +91,20 @@ export default {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
-  	}
+  	},
+	container: {
+		center: true,
+		padding: {
+		  DEFAULT: "1rem",
+		  md: "2rem",
+		  lg: "4rem",
+		},
+	  },
+	  screens: {
+		sm: "375px",
+		md: "768px",
+		lg: "1200px",
+	  },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

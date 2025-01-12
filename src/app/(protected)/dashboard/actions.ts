@@ -20,6 +20,8 @@ export async function askQuestion(question: string, projectId: string) {
 
   const stream = createStreamableValue();
 
+  console.log("projectId", projectId);
+
   try {
     // Generate query vector for the question
     const queryVector = await generateEmbedding(question);

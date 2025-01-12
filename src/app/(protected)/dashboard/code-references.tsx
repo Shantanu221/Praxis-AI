@@ -23,9 +23,10 @@ const CodeReferences = ({ filesReferences }: Props) => {
               onClick={() => setTab(file.fileName)}
               key={file.fileName}
               className={cn(
-                "whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted",
+                "whitespace-nowrap rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors",
                 {
-                  "bg-primary text-foreground": tab === file.fileName,
+                  "bg-primary text-primary-foreground hover:text-primary-foreground":
+                    tab === file.fileName,
                 },
               )}
             >

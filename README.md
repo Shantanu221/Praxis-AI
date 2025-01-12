@@ -85,10 +85,16 @@ Follow these steps to set up Praxis locally:
    - Create a `.env.local` file in the root directory.
    - Add the required keys:
      ```env
-     NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
-     NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your_stripe_public_key
-     PRISMA_DATABASE_URL=your_database_url
-     CLERK_FRONTEND_API=your_clerk_frontend_api
+     DATABASE_URL=""
+     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+     CLERK_SECRET_KEY=
+     
+     GEMINI_API_KEY=""
+     ASSEMBLYAI_API_KEY=""
+      
+     STRIPE_SECRET_KEY=""
+     STRIPE_PUBLISHABLE_KEY=""
+     STRIPE_WEBHOOK_SECRET=""
      ```
 
 4. Run the development server:

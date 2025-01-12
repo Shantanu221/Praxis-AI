@@ -20,7 +20,7 @@ export async function askQuestion(question: string, projectId: string) {
 
   const stream = createStreamableValue();
 
-  console.log("projectId", projectId);
+  //console.log("projectId", projectId);
 
   try {
     // Generate query vector for the question

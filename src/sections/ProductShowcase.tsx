@@ -15,7 +15,10 @@ export default function ProductShowcase() {
   const rotateX = useTransform(scrollYProgress, [0, 1], [15, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
-    <section className="bg-neutral-950 bg-gradient-to-b from-black to-[#5D2CAB] py-[72px] text-white md:py-20">
+    <section
+      className="bg-neutral-950 bg-gradient-to-b from-black to-[#5D2CAB] py-[72px] text-white md:py-20"
+      id="showcase"
+    >
       <div className="container">
         <div className="flex items-center justify-center">
           <Tag>Showcase</Tag>

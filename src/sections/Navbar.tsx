@@ -3,17 +3,18 @@
 import Image from "next/image";
 import logoImage from "@/assets/images/logo.png";
 import Button from "../components/my-custom/Button";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "#" },
-  { label: "Features", href: "#features" },
-  { label: "Integrations", href: "#integrations" },
+  { label: "Features", href: "#feature" },
+  { label: "Showcase", href: "#showcase" },
   { label: "FAQs", href: "#faqs" },
 ];
 
 export default function Navbar() {
   return (
-    <section className="top-0 z-50 bg-neutral-950 py-4 text-white">
+    <section className="sticky top-0 z-50 py-4 text-white">
       <div className="container max-w-6xl">
         <div className="grid grid-cols-2 items-center overflow-clip rounded-full border border-white/15 bg-neutral-950/70 p-2 px-6 pl-4 backdrop-blur md:py-1 md:pr-3 lg:grid-cols-3 lg:pl-3">
           <div className="flex items-center gap-2">
@@ -52,18 +53,22 @@ export default function Navbar() {
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
-            <Button
-              variant="secondary"
-              className="hidden items-center md:inline-flex"
-            >
-              Log In
-            </Button>
-            <Button
-              variant="primary"
-              className="hidden items-center md:inline-flex"
-            >
-              Sign Up
-            </Button>
+            <Link href="/sign-in">
+              <Button
+                variant="secondary"
+                className="hidden items-center md:inline-flex"
+              >
+                Log In
+              </Button>
+            </Link>
+            <Link href="/sign-up">
+              <Button
+                variant="primary"
+                className="hidden items-center md:inline-flex"
+              >
+                Sign Up
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

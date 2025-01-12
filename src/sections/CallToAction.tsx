@@ -3,9 +3,25 @@ import helixImage from "@/assets/images/helix2.png";
 import aiImage from "@/assets/images/ai-vector.png";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function CallToAction() {
+  const [email, setEmail] = useState("");
+  const handleMailMeClick = () => {
+    if (email) {
+      // Construct the mailto link
+      const subject = "Hello!";
+      const body = "I wanted to reach out.";
+      const mailtoLink = `mailto:shantanu.ingale22@gmail.com?subject=${encodeURIComponent(
+        subject,
+      )}&body=${encodeURIComponent(body)}%0AFrom: ${encodeURIComponent(email)}`;
+
+      // Open the mailto link
+      window.location.href = mailtoLink;
+    } else {
+      alert("Please enter your email before clicking 'Mail Me'.");
+    }
+  };
   const containerRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -41,11 +57,16 @@ export default function CallToAction() {
         </p>
         <form className="mx-auto mt-10 flex max-w-sm flex-col gap-2.5 md:flex-row">
           <input
-            type="email"
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="your@email.com"
             className="h-12 rounded-lg bg-white/20 px-5 font-medium placeholder:text-[#9CA3AF] md:flex-1"
+            required
           />
-          <button className="h-12 rounded-lg bg-white px-5 text-black">
+          <button
+            type="button"
+            onClick={handleMailMeClick}
+            className="h-12 rounded-lg bg-white px-5 text-black"
+          >
             Mail Me
           </button>
         </form>

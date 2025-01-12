@@ -15,10 +15,22 @@ export default function Footer() {
           </div>
           <ul className="flex justify-center gap-3">
             <li>
-              <Image src={linkedIcon} alt="icon" className="size-6" />
+              <a
+                href="https://www.linkedin.com/in/shantanu-ingale/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={linkedIcon} alt="icon" className="size-6" />
+              </a>
             </li>
             <li>
-              <Image src={instaIcon} alt="icon" className="size-6" />
+              <a
+                href="https://www.instagram.com/shantanu_i_c/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={instaIcon} alt="icon" className="size-6" />
+              </a>
             </li>
             <li>
               <Image src={xIcon} alt="icon" className="size-6" />

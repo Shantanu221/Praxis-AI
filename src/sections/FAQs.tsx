@@ -107,7 +107,10 @@ const AccordianItem = ({
 
 export default function FAQs() {
   return (
-    <section className="bg-black bg-gradient-to-b from-[#5D2CAB] to-black py-[72px] text-white md:py-24">
+    <section
+      className="bg-black bg-gradient-to-b from-[#5D2CAB] to-black py-[72px] text-white md:py-24"
+      id="faqs"
+    >
       <div className="container">
         <h2 className="mx-auto max-w-[648px] text-center text-4xl font-bold tracking-tighter md:text-5xl">
           Frequently asked questions

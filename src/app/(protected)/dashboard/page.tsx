@@ -23,13 +23,15 @@ const DashboardPage = () => {
             <div className="ml-2">
               <p className="text-sm font-medium text-white">
                 This project is linked to{" "}
-                <Link
+                <a
                   href={project?.githubUrl ?? ""}
                   className="inline-flex items-center text-white/80 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {project?.githubUrl}
                   <ExternalLink className="ml-1 size-4" />
-                </Link>
+                </a>
               </p>
             </div>
           </div>

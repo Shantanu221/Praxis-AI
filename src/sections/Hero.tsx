@@ -7,6 +7,7 @@ import msgImage from "../assets/images/message.png";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   const router = useRouter();
@@ -67,9 +68,11 @@ export default function Hero() {
           </p>
         </div>
         <div className="mt-8 flex justify-center">
-          <Button variant="custom" onClick={handleRedirect}>
-            Get Started
-          </Button>
+          <Link href={'/dashboard'}>
+            <Button variant="custom">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -27,7 +27,10 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="bg-black py-[72px] text-white md:py-24 lg:py-28">
+    <section
+      className="bg-black py-[72px] text-white md:py-24 lg:py-28"
+      id="feature"
+    >
       <div className="container">
         <div className="flex items-center justify-center">
           <Tag>Features</Tag>

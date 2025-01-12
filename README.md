@@ -103,19 +103,20 @@ Follow these steps to set up Praxis locally:
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure (src)
 
 ```plaintext
 .
-├── components       # Reusable UI components
-├── pages            # Next.js page routes
-├── styles           # Tailwind CSS styles
-├── utils            # Helper functions and utilities
-├── prisma           # Database schema and Prisma configurations
-├── public           # Static assets
+├── components       # Reusable UI components along with custom components
+├── app              # Next.js page protected routes
+├── styles           # Tailwind and global CSS styles
+├── assets           # required assets forthe project
+├── hooks            # Reusable hooks for efficient codebase
+├── sections         # Section for landing page sections
 ├── api              # API routes and integrations
 ├── lib              # Core library functions
-└── .env.local       # Environment variables
+├── server           # tRpc server code
+└── .env             # Environment variables
 ```
 
 ---
@@ -150,7 +151,7 @@ We welcome contributions to Praxis! To contribute:
 
 ## 📧 Contact
 
-For queries or feedback, reach out to us at [support@praxis.ai](mailto\:support@praxis.ai).
+For queries or feedback, reach out to me at [shantanu.ingale22@gmail.com](mailto\:shantanu.ingale22@gmail.com).
 
 ---
 

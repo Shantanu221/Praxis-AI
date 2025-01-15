@@ -14,13 +14,13 @@ import { error } from "console";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDB6EuTpeR81F9hdfPKYZYOvpNHNbSZi38",
-  authDomain: "praxis-ai-6ecb5.firebaseapp.com",
-  projectId: "praxis-ai-6ecb5",
-  storageBucket: "praxis-ai-6ecb5.firebasestorage.app",
-  messagingSenderId: "764166132792",
-  appId: "1:764166132792:web:633de7602b39bc6cad42cd",
-  measurementId: "G-KWCMKX7QS9",
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.MESSAGINGSENDERID,
+  appId: process.env.APPID,
+  measurementId: process.env.MEASUREMENTID,
 };
 
 // Initialize Firebase

@@ -49,7 +49,7 @@ export async function askQuestion(question: string, projectId: string) {
     // Stream the AI response asynchronously
     (async () => {
       const { textStream } = await streamText({
-        model: google("gemini-2.0-flash-exp"),
+        model: google("gemini-1.5-flash"),
         prompt: `
           You are an AI code assistant who answers questions about a codebase. Your target audience is a technical intern who is trying to understand the codebase.
           The AI assistant has expert knowledge, is helpful, and provides detailed, step-by-step explanations, including code snippets when necessary.
